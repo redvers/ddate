@@ -17,7 +17,12 @@ defmodule Ddate.Mixfile do
 
   def application, do: []
 
-  defp deps, do: []
+  defp deps do
+    [
+      {:ex_doc, ">= 0.0.0", only: :dev}
+    ]
+  end
+
   defp description, do: "Discordian Date system library"
 
   defp package() do
